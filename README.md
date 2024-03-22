@@ -69,12 +69,13 @@ and run your command as usual OR acces your docker config file and edit
 
 On Linux/macOS: `~/.docker/config.json` and add `"features": ("buildkit": true)`
 for instance:
+```
 {
   "feature": {
     "buildkit": true
   }
 }
-
+```
 **Phase 2: Security**
 
 1. **Install SonarQube and Trivy:**
