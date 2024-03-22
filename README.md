@@ -56,6 +56,11 @@ It will show an error cause you need API key
 - You will receive your TMDB API key.
 
 Now recreate the Docker image with your api key:
+### make sure you have docker buildkit enabled, if not run the command below and run your command as usual
+```
+export DOCKER_BUILDKIT=1
+```
+### now recreate your image with the api key
 ```
 docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
 ```
